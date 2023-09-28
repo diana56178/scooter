@@ -1,0 +1,135 @@
+.benefits {
+    position: relative;
+    padding: 16px;
+    padding-bottom: 40px;
+
+    @media (min-width: $breakpoint-large) {
+        padding-bottom: 10px;
+    }
+}
+
+.benefits__wrapper {
+    @media (max-width: $breakpoint-small-down) {
+        width: 343px;
+    }
+}
+
+.benefits-photo__item::before {
+    @media (max-width: $breakpoint-small-down) {
+        display: none;
+    }
+    position: absolute;
+    z-index: 5;
+    content: "";
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.benefits-photo__item--pearl::before {
+
+    transform: translateX(20px);
+    top: -50px;
+    right: 0;
+    height: 178px;
+    width: 154px;
+    background-image: url("../img/pearl.svg");
+}
+
+.benefits-photo__item--geo::before {
+    // @media (max-width: $breakpoint-small-down) {
+    //     display: block;
+    //     background-image: url("../img/pearl.svg");
+    //     top: 0;
+    //     right: 0;
+    // }
+
+    // @media (min-width: $breakpoint-large) {
+        top: 0px;
+    left: -150px;
+    width: 320px;
+     height: 320px;
+    background-image: url("../img/geo-icon.svg");
+    //}
+}
+
+.benefits-photo__item--sweets::before {
+    right: -90px;
+    bottom: -200px;
+    width: 300px;
+    height: 400px;
+    background-image: url("../img/cup-icon.svg");
+}
+
+.benefits-photo__list {
+    position: relative;
+    list-style-type: none;
+    margin-top: 0;
+    padding: 0;
+
+    @media (min-width: $breakpoint-large) {
+        display: grid;
+        grid-template-columns: 455px 455px;
+        grid-auto-rows: 455px;
+        row-gap: 8px;
+        column-gap: 16px;
+        margin-bottom: 0;
+    }
+}
+
+.benefits-photo__list::before {
+    @media (max-width: $breakpoint-small-down) {
+        content: "";
+        position: absolute;
+        right: -50px;
+        top: -70px;
+        z-index: 5;
+        display: block;
+        width: 178px;
+        height: 140px;
+        background-image: url("../img/pearl.svg");
+    }
+}
+
+.benefits-photo__item {
+    position: relative;
+    width: 343px;
+    height: 343px;
+
+    @media (min-width: $breakpoint-large) {
+        width: 455px;
+        height: 455px;
+    }
+
+    &:not(:first-child) {
+        @media (max-width: $breakpoint-large) {
+            display: none;
+        }
+    }
+}
+
+.benefits-photo__item:nth-child(2n) {
+    @media (min-width: $breakpoint-large) {
+        transform: translateY(-180px);
+    }
+}
+
+.benefits-photo__image {
+    display: block;
+    width: 343px;
+    height: 343px;
+
+    @media (min-width: $breakpoint-large) {
+        width: 455px;
+        height: 455px;
+    }
+}
+
+.benefits__text {
+    margin-top: 0;
+    margin-bottom: 48px;
+
+    @media (min-width: $breakpoint-large) {
+        width: 442px;
+    }
+}

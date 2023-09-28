@@ -1,0 +1,9 @@
+.wrapper {
+    width: 311px;
+    margin-right: auto;
+    margin-left: auto;
+  
+    @media (min-width: $breakpoint-large) {
+      width: 960px;
+    }
+  }

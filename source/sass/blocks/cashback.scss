@@ -1,0 +1,45 @@
+.cashback {
+    padding: 16px 16px 40px;
+
+    @media (min-width: $breakpoint-large) {
+         padding-top: 110px;
+         position: relative;
+         background-repeat: no-repeat;
+         background-position: 75% -90px;
+        background-image: 
+          url("../img/full-colored-scooter.png");
+
+          @media (min-resolution: 2dppx) {
+            background-image: 
+                url("../img/full-colored-scooter@2x.png");
+            background-size: auto 742px;
+          }
+    }
+}
+
+.cashback__header {
+    @media (min-width: $breakpoint-large) {
+        width: 407px;
+    }
+}
+
+.cashback__text {
+    margin: 0;
+
+    @media (min-width: $breakpoint-large) {
+        width: 419px;
+    }
+}
+
+.cashback__image {
+    position: absolute;
+    top: -200px;
+    right: 300px;
+}
+
+.cashback__container {
+    @media (min-width: $breakpoint-large) {
+        position: relative;
+        width: 407px;
+    }
+}

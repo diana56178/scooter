@@ -1,0 +1,83 @@
+.advantages {
+    padding: 32px;
+    padding-bottom: 40px;
+
+    @media (min-width: $breakpoint-large) {
+        padding-bottom: 98px;
+    }
+}
+
+.advantages__header {
+    @media (min-width: $breakpoint-large) {
+        font-size: 56px;
+        line-height: 56px;
+    }
+}
+
+.advantages__header br {
+    @media (max-width: $breakpoint-small-down) {
+        display: none;
+    }
+}
+
+.advantages__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    @media (min-width: $breakpoint-large) {
+        display: grid;
+        grid-template-columns: 362px 400px;
+        column-gap: 112px;
+        row-gap: 61px;
+    }
+}
+
+.advantages__item {
+    display: grid;
+    grid-template-columns: 83px 1fr;
+    gap: 16px;
+
+    @media (max-width: $breakpoint-small-down) {
+        align-items: center;
+    }
+
+    @media (min-width: $breakpoint-large) {
+        grid-template-columns: auto;
+        grid-template-rows: 83px auto;
+    }
+
+    & + & {
+        @media (max-width: $breakpoint-small-down) {
+            margin-top: 24px;
+        }
+    }
+
+    &::before {
+        content: "";
+        width: 83px;
+        height: 83px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+    @media (min-width: $breakpoint-large) {
+        margin-top: 0;
+    }
+}
+
+.advantages__item--price::before {
+    background-image: url("../img/rub-icon.svg");
+}
+
+.advantages__item--friends::before {
+    background-image: url("../img/scooter-icon.svg");
+}
+
+.advantages__item--time::before {
+    background-image: url("../img/time-icon.svg");
+}
+
+.advantages__item--energy::before {
+    background-image: url("../img/battery-icon.svg");
+}

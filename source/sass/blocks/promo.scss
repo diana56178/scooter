@@ -1,0 +1,73 @@
+.promo__wrapper {
+    @media (max-width: $breakpoint-small-down) {
+        padding-bottom: 350px;
+    }
+
+    @media (min-width: $breakpoint-large) {
+        padding-bottom: 125px;
+    }
+}
+
+.promo__text {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 130%;
+
+    @media (min-width: $breakpoint-large) {
+        width: 420px;
+        margin-bottom: 44px;
+        font-size: 24px;
+    }
+}
+
+.promo__button {
+    // width: 100%;
+
+    @media (max-width: $breakpoint-small-down) {
+        position: absolute;
+        top: 620px;
+        width: 311px;
+    }
+
+    @media (min-width: $breakpoint-large) {
+        width: auto;
+        justify-self: start;
+    }
+}
+
+.promo__old-price {
+    display: inline-block;
+    padding: 5px 7px;
+    padding-left: 0;
+    color: #808080;
+    font-size: 13px;
+    line-height: 16px;
+    border-radius: 36px;
+    background: rgba(224, 184, 255, 0.6);
+
+    @media (min-width: $breakpoint-large) {
+        font-size: 16px;
+        line-height: 19px;
+        padding: 8px 12px;
+        padding-left: 0;
+    }
+}
+
+.promo__new-price {
+    color: #21201F;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    background: radial-gradient(100% 100% at 100% 0%, #E0B8FF 0%, #B6B9FF 100%),
+    linear-gradient(0deg, rgba(241, 241, 241, 0.6), rgba(241, 241, 241, 0.6));
+    padding: 5px 7px;
+    border-radius: 36px;
+    text-decoration: none;
+
+    @media (min-width: $breakpoint-large) {
+        font-size: 24px;
+        line-height: 29px;
+        padding: 8px 12px;
+    }
+}

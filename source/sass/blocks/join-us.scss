@@ -1,0 +1,69 @@
+.join-us {
+    padding: 32px;
+    padding-bottom: 40px;
+    background-repeat: no-repeat;
+
+    @media (max-width: $breakpoint-small-down) {
+        padding-top: 250px;
+        background-image: url("../img/round-small-true.png");
+        background-position-x: center;
+        background-position-y: -20px;
+
+        @media (min-resolution: 2dppx) {
+            background-image: url("../img/round-small-true@2x.png");
+            background-size: auto 301px;
+        }
+    }
+
+    @media (min-width: $breakpoint-large) {
+        padding-top: 98px;
+        padding-bottom: 90px;
+        background-image: url("../img/round-large-true.png");
+        background-position: 23% 10%;
+
+        @media (min-resolution: 2dppx) {
+            background-image: url("../img/round-large-true@2x.png");
+            background-size: auto 600px;
+        }
+    }
+}
+
+.join-us__image {
+    display: block;
+    width: 301px;
+    height: 347px;
+
+    @media (min-width: $breakpoint-large) {
+        width: 450px;
+        height: 456px;
+    }
+}
+
+.join-us__wrapper {
+    @media (min-width: $breakpoint-large) {
+        display: grid;
+        grid-template-columns: 484px 419px;
+        column-gap: 57px;
+    }
+}
+
+.join-us__container {
+    position: relative;
+}
+
+.join-us__text {
+    margin-top: 0;
+    margin-bottom: 32px;
+
+    @media (min-width: $breakpoint-large) {
+        margin-bottom: 48px;
+    }
+}
+
+.join-us__button {
+    width: 100%;
+
+    @media (min-width: $breakpoint-large) {
+        width: auto;
+    }
+}

@@ -1,0 +1,8 @@
+.page-header__logo {
+    display: block;
+    margin-bottom: 32px;
+
+    @media (min-width: $breakpoint-large) {
+        margin-bottom: 72px;
+    }
+}

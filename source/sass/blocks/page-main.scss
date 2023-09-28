@@ -1,0 +1,79 @@
+.page-main__header {
+    background-repeat: no-repeat;
+
+    @media (max-width: $breakpoint-small-down) {
+        position: relative;
+        padding: 32px 0 350px;
+        background-size: 354px 308px, cover, cover;
+        background-position: 50% 310px, 100% 100%, 100% 100%;
+        background-repeat: no-repeat, repeat, repeat;
+        background: 
+            url("../img/promo-small.png"),
+            linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%),
+            linear-gradient(to right, rgba(255, 92, 77, 20%), rgba(235, 70, 159, 20%), rgba(131, 65, 239, 20%), rgba(63, 104, 249, 20%));
+
+        @media (min-resolution: 2dppx) {
+            background: 
+                url("../img/promo-small@2x.png"),
+                linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%),
+                linear-gradient(to right, rgba(255, 92, 77, 20%), rgba(235, 70, 159, 20%), rgba(131, 65, 239, 20%), rgba(63, 104, 249, 20%));
+            background-size: 354px 308px, cover, cover;
+            background-position: 50% 310px, 100% 100%, 100% 100%;
+            background-repeat: no-repeat, repeat, repeat;
+        }
+    }
+
+
+    @media (min-width: $breakpoint-large) {
+        padding: 124px 0 100px;
+        background: 
+            url("../img/promo-big.png"),
+            linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%),
+            linear-gradient(90deg, rgba(255, 92, 77, 20%), rgba(235, 70, 159, 20%), rgba(131, 65, 239, 20%), rgba(63, 104, 249, 20%));
+            background-size: 859px auto, cover, cover;
+             background-position: 60% 0%, 100% 100%, 100% 100%;
+             background-repeat: no-repeat, repeat, repeat;
+
+        @media (min-resolution: 2dppx) {
+            background: 
+                 url("../img/promo-big@2x.png"),
+                 linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%),
+                 linear-gradient(90deg, rgba(255, 92, 77, 20%), rgba(235, 70, 159, 20%), rgba(131, 65, 239, 20%), rgba(63, 104, 249, 20%));
+             background-size: 859px auto, cover, cover;
+             background-position: 60% 0%, 100% 100%, 100% 100%;
+             background-repeat: no-repeat, repeat, repeat;
+        }
+    }
+}
+
+.page-main__heading {
+    margin: 0;
+    margin-bottom: 35px;
+    font-family: $font-heading;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 100%;
+    letter-spacing: -2px;
+
+    @media (min-width: $breakpoint-large) {
+        margin-bottom: 48px;
+        font-size: 72px;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+  
+  .page-main__subheading {
+    margin-top: 0;
+    margin-bottom: 32px;
+    font-family: $font-heading;
+    font-size: 32px;
+    line-height: 100%;
+    font-weight: 900;
+    letter-spacing: -2px;
+
+    @media (min-width: $breakpoint-large) {
+        margin-bottom: 48px;
+        font-size: 48px;
+        line-height: 48px;
+    }
+}

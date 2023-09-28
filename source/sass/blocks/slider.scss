@@ -1,0 +1,32 @@
+.slider__controls {
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: $breakpoint-large) {
+        display: none;
+    }
+}
+
+.slider__button {
+    width: 48px;
+    height: 48px;
+    background-color: #FFDE40;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-image: url("../img/arrow-icon.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slider__button:hover {
+    opacity: 0.5;
+}
+
+.button-prev {
+    transform: rotate(180deg);
+}
+
+.slider__button + .slider__button {
+    margin-left: 12px;
+}
